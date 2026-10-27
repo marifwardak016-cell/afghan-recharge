@@ -1,0 +1,23 @@
+# Copy this file to .env. Never publish .env or commit real keys.
+PORT=3000
+BASE_URL=http://localhost:3000
+DATABASE_FILE=./data/orders.sqlite
+NODE_ENV=development
+
+# Default safe mode: demo orders only, no card charge, no real top-up.
+APP_MODE=demo
+
+# Stripe Checkout (use test keys first). Stripe account approval is required for live payments.
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+STRIPE_CURRENCY=eur
+
+# Provider integration stays disabled until you receive official API docs and credentials.
+TOPUP_PROVIDER=mock
+TOPUP_API_KEY=
+TOPUP_API_BASE_URL=
+TOPUP_LIVE_ENABLED=false
+
+# Admin page access (set a long random password before exposing the app).
+ADMIN_USER=admin
+ADMIN_PASSWORD=change-this-password

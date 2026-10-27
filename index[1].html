@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12345a"><title>Afghan Recharge</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">⚡</span><span><strong>Afghan Recharge</strong><small data-i18n="tagline">شارژ و بسته اینترنت افغانستان</small></span></a><div class="header-actions"><button id="langToggle" class="lang-button">Français</button><span class="demo-pill" id="modePill">نسخه آزمایشی</span></div></header>
+<main class="container">
+<section class="hero"><div><p class="eyebrow" data-i18n="eyebrow">از فرانسه به افغانستان</p><h1 data-i18n="heroTitle">برای عزیزانت شارژ بفرست</h1><p class="hero-copy" data-i18n="heroCopy">اپراتور را انتخاب کن، شماره را وارد کن و کریدت یا بسته اینترنت را انتخاب کن.</p></div><div class="hero-art">🇦🇫 <b>↗</b> 📱</div></section>
+<div class="notice"><strong data-i18n="demoNoticeTitle">حالت آزمایشی:</strong><span id="modeMessage" data-i18n="demoNotice">هیچ پولی دریافت نمی‌شود و هیچ شارژ واقعی ارسال نمی‌شود.</span></div>
+<section class="panel"><div class="section-heading"><div><span class="step">01</span><h2 data-i18n="recipientTitle">مشخصات دریافت‌کننده</h2></div></div>
+<label for="operator" data-i18n="operatorLabel">اپراتور موبایل</label><select id="operator"><option value="Roshan">Roshan / روشن</option><option value="AWCC">AWCC / افغان بیسیم</option><option value="Etisalat">Etisalat / اتصالات</option><option value="Salaam">Salaam / سلام</option><option value="ATOMA">ATOMA / اتوما</option></select>
+<label for="phone" data-i18n="phoneLabel">شماره موبایل افغانستان</label><div class="phone-field"><span>+93</span><input id="phone" inputmode="numeric" placeholder="7XXXXXXXX" maxlength="9"></div><p id="phoneError" class="error" hidden></p></section>
+<section class="panel"><div class="section-heading"><div><span class="step">02</span><h2 data-i18n="productTitle">نوع شارژ</h2></div></div>
+<div class="segmented"><button class="segment active" data-kind="airtime" data-i18n="airtime">کریدت</button><button class="segment" data-kind="data" data-i18n="data">بسته اینترنت</button></div><div id="products" class="product-grid"></div><p class="field-help" data-i18n="productHelp">قیمت‌ها نمونه هستند و به تأمین‌کننده واقعی متصل نیستند.</p></section>
+<section class="panel"><div class="section-heading"><div><span class="step">03</span><h2 data-i18n="summaryTitle">خلاصه سفارش</h2></div></div>
+<div class="summary-line"><span data-i18n="operatorSummary">اپراتور</span><strong id="summaryOperator">روشن</strong></div><div class="summary-line"><span data-i18n="phoneSummary">شماره دریافت‌کننده</span><strong id="summaryPhone">+93 —</strong></div><div class="summary-line"><span data-i18n="productSummary">محصول</span><strong id="summaryProduct">کریدت ۵۰۰ افغانی</strong></div><div class="summary-line total"><span data-i18n="total">مبلغ نمونه</span><strong id="summaryPrice">€5.00</strong></div>
+<button id="checkout" class="primary-button" data-i18n="checkout">ثبت سفارش آزمایشی</button><p class="tiny-note" id="paymentNote" data-i18n="paymentNote">پرداخت بانکی هنوز فعال نیست. برای فعال‌سازی باید درگاه پرداخت تأییدشده به سرور متصل شود.</p></section>
+<section id="result" class="result panel" hidden aria-live="polite"><div class="result-icon">✓</div><div><h2 id="resultTitle">سفارش ثبت شد</h2><p id="resultText"></p><p class="field-help" id="resultNote"></p></div><button id="newOrder" class="secondary-button" data-i18n="newOrder">سفارش جدید</button></section>
+<footer><span>© <span id="year"></span> Afghan Recharge</span><span data-i18n="footerNote">نسخه نمایشی — بدون پرداخت و ارسال واقعی</span></footer>
+</main><script src="/app.js"></script>
+</body></html>
